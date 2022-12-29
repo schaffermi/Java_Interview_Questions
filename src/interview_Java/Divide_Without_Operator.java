@@ -3,29 +3,27 @@ package interview_Java;
 import java.util.Scanner;
 
 public class Divide_Without_Operator {
+
     public static void main(String[] args) {
 
+        divide(10,5);
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter first number");
-
-        int num1 = input.nextInt();
-
-        System.out.println("Enter second number");
-        int num2 = input.nextInt();
-
-        int total = num1+num2;
-
-        int result=0;
-
-        while (total > num2){
-            total=total-num2;
-            result++;
-        }
-
-        System.out.println("The result is "+ result);
 
     }
+
+    public static void divide(int num1, int num2) {
+        int total= num1 + num2;
+        int result=0;
+
+        while (total > num2) {
+            total = total - num2;
+            result++;
+        }
+        System.out.println(result);
+
+    }
+
+
 
 }
 
